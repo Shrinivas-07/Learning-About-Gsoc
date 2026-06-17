@@ -1,24 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Learning GSoC</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    <h1>Welcome to Learning GSoC, Winner of the Google Summer of Code 2027, internship</h1>
-    <h2>laern something not at once but once a day</h2>
-    <h1>hello guys i am shrinivas from bihar hobby in coding and software</h1>
-    <h2>i hope you all are doing well in your life</h2>
-    <h1>crack the interview and proud of yourself</h1>
+    <!-- Navbar -->
 
-    <button onclick="showMessage()">
-        Click Me
-    </button>
+    <nav>
+        <div class="logo">🌱 AgroVision</div>
 
-    <p id="message"></p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero" id="home">
+
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+
+            <h1>Modern Agriculture For A Better Tomorrow</h1>
+
+            <p>
+                Empowering farmers with technology, innovation,
+                and sustainable farming solutions.
+            </p>
+
+            <button onclick="scrollToSection()">
+                Explore More
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Stats -->
+
+    <section class="stats">
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="2500">0</h2>
+            <p>Farmers Connected</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="120">0</h2>
+            <p>Villages Served</p>
+        </div>
+
+        <div class="stat-card">
+            <h2 class="counter" data-target="98">0</h2>
+            <p>% Satisfaction</p>
+        </div>
+
+    </section>
+
+    <!-- Services -->
+
+    <section class="services" id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="card">
+                <h3>🌾 Smart Farming</h3>
+                <p>Data-driven agriculture using modern technology.</p>
+            </div>
+
+            <div class="card">
+                <h3>🚜 Crop Monitoring</h3>
+                <p>Track crop health and maximize productivity.</p>
+            </div>
+
+            <div class="card">
+                <h3>☁ Weather Forecast</h3>
+                <p>Get accurate weather insights for better planning.</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Market Insights</h3>
+                <p>Stay updated with crop prices and demand trends.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Video -->
+
+    <section class="video-section">
+
+        <h2>Agriculture In Action</h2>
+
+        <div class="video-container">
+
+            <iframe
+                src="https://www.youtube.com/embed/2M9xq4k0YjQ?autoplay=1&mute=1&loop=1&playlist=2M9xq4k0YjQ"
+                title="Agriculture Video"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery" id="gallery">
+
+        <h2>Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854" alt="">
+
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" alt="">
+
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" alt="">
+
+            <img src="https://images.unsplash.com/photo-1492496913980-501348b61469" alt="">
+
+            <img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0" alt="">
+
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <form>
+
+            <input type="text" placeholder="Your Name">
+
+            <input type="email" placeholder="Email">
+
+            <textarea placeholder="Message"></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        © 2026 AgroVision | Smart Agriculture Platform
+    </footer>
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
